@@ -1,5 +1,5 @@
 {% set name = "xanadu-cloud-client" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xanadu-cloud-client-{{ version }}.tar.gz
-  sha256: ad08c5717926a116ab9be266a225c7ebdf68ac2892d1b76e8ad00d7c43898b79
+  sha256: d86665c2922e3c66b8c002ea0d44beb20f590eb3f3a0f2d3e2ca6892f202b0b7
 
 build:
   number: 0
