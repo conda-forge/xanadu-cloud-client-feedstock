@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - appdirs
     - fire
     - numpy
     - pydantic
-    - python >=3.6
+    - python >=3.7
     - python-dotenv >=0.10.4
     # From pydantic
     - python-dateutil
