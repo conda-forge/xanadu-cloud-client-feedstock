@@ -27,7 +27,6 @@ requirements:
     - numpy
     - pydantic <2
     - python >=3.7
-    - python-dotenv >=0.10.4
     # From pydantic
     - python-dateutil
     - requests
