@@ -30,6 +30,8 @@ requirements:
     # From pydantic
     - python-dateutil
     - requests
+    # Needed but not listed
+    - python-dotenv >=0.10.4
 
 test:
   imports:
