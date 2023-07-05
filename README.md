@@ -1,11 +1,11 @@
-About xanadu-cloud-client
-=========================
+About xanadu-cloud-client-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xanadu-cloud-client-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/XanaduAI/xanadu-cloud-client
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xanadu-cloud-client-feedstock/blob/main/LICENSE.txt)
 
 Summary: XCC is a Python API and CLI for the Xanadu Cloud.
 
