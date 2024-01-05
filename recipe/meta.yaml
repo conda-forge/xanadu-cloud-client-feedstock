@@ -1,5 +1,5 @@
 {% set name = "xanadu-cloud-client" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xanadu-cloud-client-{{ version }}.tar.gz
-  sha256: 837572afdfaae5f7109fd51c9336ac3bda7072e68e19284ee914c09afab052d4
+  sha256: 563750ed72d2e9bbe428073bcb4ee02d751872d026207e90e88e928fab495ffb
 
 build:
   number: 0
@@ -22,16 +22,17 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - pydantic-settings
     - appdirs
     - fire
     - numpy
-    - pydantic <2
+    - pydantic >=2
     - python >=3.7
     # From pydantic
     - python-dateutil
     - requests
     # Needed but not listed
-    - python-dotenv >=0.10.4
+    - python-dotenv
 
 test:
   imports:
