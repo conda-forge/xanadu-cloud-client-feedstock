@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xanadu-cloud-client-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xanadu-cloud-client-{{ version }}.tar.gz
   sha256: 563750ed72d2e9bbe428073bcb4ee02d751872d026207e90e88e928fab495ffb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - xcc=xcc.commands:main
@@ -20,14 +20,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - pydantic-settings
     - appdirs
     - fire
     - numpy
     - pydantic >=2
-    - python >=3.7
+    - python >={{ python_min }}
     # From pydantic
     - python-dateutil
     - requests
@@ -42,6 +42,7 @@ test:
     - xcc --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/XanaduAI/xanadu-cloud-client
